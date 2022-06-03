@@ -6,3 +6,8 @@
 //
 
 import Foundation
+struct Crypto {
+    var name: String
+    var ticker: String
+    var value: Int
+}
