@@ -6,11 +6,13 @@
 //
 
 import Foundation
+
 struct Crypto {
     var name: String
     var ticker: String
     var value: Int
 }
+
 extension Crypto {
     static var testData = [
         Crypto(name: "Bitcoin", ticker: "BTC", value: 55000),

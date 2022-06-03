@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140A989E284A344F00109F21 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140A989D284A344F00109F21 /* Crypto.swift */; };
 		142B407E284A319400829412 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B407D284A319400829412 /* AppDelegate.swift */; };
 		142B4080284A319400829412 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B407F284A319400829412 /* SceneDelegate.swift */; };
 		142B4082284A319400829412 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B4081284A319400829412 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		140A989D284A344F00109F21 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		142B407A284A319400829412 /* LexoneLesson03-MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LexoneLesson03-MVP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		142B407D284A319400829412 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		142B407F284A319400829412 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		140A989A284A32C800109F21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				140A989D284A344F00109F21 /* Crypto.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		140A989B284A32D400109F21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		140A989C284A32E400109F21 /* Presentors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentors;
+			sourceTree = "<group>";
+		};
 		142B4071284A319400829412 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +80,10 @@
 		142B407C284A319400829412 /* LexoneLesson03-MVP */ = {
 			isa = PBXGroup;
 			children = (
+				140A989C284A32E400109F21 /* Presentors */,
+				140A989B284A32D400109F21 /* Views */,
+				140A989A284A32C800109F21 /* Models */,
+				142B4091284A31EC00829412 /* App */,
 				142B407D284A319400829412 /* AppDelegate.swift */,
 				142B407F284A319400829412 /* SceneDelegate.swift */,
 				142B4081284A319400829412 /* ViewController.swift */,
@@ -65,6 +93,13 @@
 				142B408B284A319700829412 /* Info.plist */,
 			);
 			path = "LexoneLesson03-MVP";
+			sourceTree = "<group>";
+		};
+		142B4091284A31EC00829412 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				140A989E284A344F00109F21 /* Crypto.swift in Sources */,
 				142B4082284A319400829412 /* ViewController.swift in Sources */,
 				142B407E284A319400829412 /* AppDelegate.swift in Sources */,
 				142B4080284A319400829412 /* SceneDelegate.swift in Sources */,
