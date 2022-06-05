@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+protocol ViewInputDeligate: AnyObject {
+    func setupInitialState()
+    func setupData(with testData: ([Crypto]))
+    func displayData(i: Int)
+}

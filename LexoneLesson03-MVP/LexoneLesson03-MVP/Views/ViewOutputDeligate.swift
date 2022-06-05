@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+protocol ViewOutputDeligate: AnyObject {
+    func getData()
+    func saveData()
+    func getRandomCount()
+}
