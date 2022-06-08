@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		144BC01D28506E23003DD6C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BC01C28506E23003DD6C5 /* AppDelegate.swift */; };
-		144BC01F28506E23003DD6C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BC01E28506E23003DD6C5 /* SceneDelegate.swift */; };
-		144BC02128506E23003DD6C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BC02028506E23003DD6C5 /* ViewController.swift */; };
+		144BC02128506E23003DD6C5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BC02028506E23003DD6C5 /* FirstViewController.swift */; };
 		144BC02428506E23003DD6C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144BC02228506E23003DD6C5 /* Main.storyboard */; };
 		144BC02628506E24003DD6C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 144BC02528506E24003DD6C5 /* Assets.xcassets */; };
 		144BC02928506E24003DD6C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144BC02728506E24003DD6C5 /* LaunchScreen.storyboard */; };
+		144BC03428506F59003DD6C5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BC03328506F59003DD6C5 /* Coordinator.swift */; };
+		144BC03628507018003DD6C5 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BC03528507018003DD6C5 /* AppCoordinator.swift */; };
+		144BC03828507172003DD6C5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BC03728507172003DD6C5 /* SecondViewController.swift */; };
+		144BC03A285071AF003DD6C5 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BC039285071AF003DD6C5 /* ThirdViewController.swift */; };
+		144BC03C28507364003DD6C5 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BC03B28507364003DD6C5 /* Storyboardable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		144BC01928506E23003DD6C5 /* LexoneSwiftLesson04-Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LexoneSwiftLesson04-Coordinator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		144BC01C28506E23003DD6C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		144BC01E28506E23003DD6C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		144BC02028506E23003DD6C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		144BC02028506E23003DD6C5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		144BC02328506E23003DD6C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		144BC02528506E24003DD6C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		144BC02828506E24003DD6C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		144BC02A28506E24003DD6C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		144BC03328506F59003DD6C5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		144BC03528507018003DD6C5 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		144BC03728507172003DD6C5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		144BC039285071AF003DD6C5 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		144BC03B28507364003DD6C5 /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		144BC01B28506E23003DD6C5 /* LexoneSwiftLesson04-Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				144BC03028506E2A003DD6C5 /* Coordinators */,
+				144BC03228506E6D003DD6C5 /* Views */,
 				144BC01C28506E23003DD6C5 /* AppDelegate.swift */,
-				144BC01E28506E23003DD6C5 /* SceneDelegate.swift */,
-				144BC02028506E23003DD6C5 /* ViewController.swift */,
-				144BC02228506E23003DD6C5 /* Main.storyboard */,
 				144BC02528506E24003DD6C5 /* Assets.xcassets */,
 				144BC02728506E24003DD6C5 /* LaunchScreen.storyboard */,
 				144BC02A28506E24003DD6C5 /* Info.plist */,
 			);
 			path = "LexoneSwiftLesson04-Coordinator";
+			sourceTree = "<group>";
+		};
+		144BC03028506E2A003DD6C5 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				144BC03128506E47003DD6C5 /* Protocols */,
+				144BC03528507018003DD6C5 /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		144BC03128506E47003DD6C5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				144BC03328506F59003DD6C5 /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		144BC03228506E6D003DD6C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				144BC02228506E23003DD6C5 /* Main.storyboard */,
+				144BC02028506E23003DD6C5 /* FirstViewController.swift */,
+				144BC03728507172003DD6C5 /* SecondViewController.swift */,
+				144BC039285071AF003DD6C5 /* ThirdViewController.swift */,
+				144BC03B28507364003DD6C5 /* Storyboardable.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				144BC02128506E23003DD6C5 /* ViewController.swift in Sources */,
+				144BC03628507018003DD6C5 /* AppCoordinator.swift in Sources */,
+				144BC02128506E23003DD6C5 /* FirstViewController.swift in Sources */,
+				144BC03C28507364003DD6C5 /* Storyboardable.swift in Sources */,
 				144BC01D28506E23003DD6C5 /* AppDelegate.swift in Sources */,
-				144BC01F28506E23003DD6C5 /* SceneDelegate.swift in Sources */,
+				144BC03828507172003DD6C5 /* SecondViewController.swift in Sources */,
+				144BC03A285071AF003DD6C5 /* ThirdViewController.swift in Sources */,
+				144BC03428506F59003DD6C5 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +332,6 @@
 				INFOPLIST_FILE = "LexoneSwiftLesson04-Coordinator/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +359,6 @@
 				INFOPLIST_FILE = "LexoneSwiftLesson04-Coordinator/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
