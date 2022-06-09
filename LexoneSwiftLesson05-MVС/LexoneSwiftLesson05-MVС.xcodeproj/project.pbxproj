@@ -13,6 +13,8 @@
 		140F582828525BC800CBDD27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140F582628525BC800CBDD27 /* Main.storyboard */; };
 		140F582A28525BCA00CBDD27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 140F582928525BCA00CBDD27 /* Assets.xcassets */; };
 		140F582D28525BCA00CBDD27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140F582B28525BCA00CBDD27 /* LaunchScreen.storyboard */; };
+		140F583928525CA500CBDD27 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140F583828525CA500CBDD27 /* Crypto.swift */; };
+		140F583C2852635D00CBDD27 /* RandomCounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140F583B2852635D00CBDD27 /* RandomCounts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		140F582928525BCA00CBDD27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		140F582C28525BCA00CBDD27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		140F582E28525BCA00CBDD27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		140F583828525CA500CBDD27 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		140F583B2852635D00CBDD27 /* RandomCounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCounts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		140F581F28525BC800CBDD27 /* LexoneSwiftLesson05-MVС */ = {
 			isa = PBXGroup;
 			children = (
+				140F583428525C2A00CBDD27 /* Controllers */,
+				140F583528525C3500CBDD27 /* Views */,
+				140F583628525C4200CBDD27 /* Models */,
 				140F582028525BC800CBDD27 /* AppDelegate.swift */,
 				140F582228525BC800CBDD27 /* SceneDelegate.swift */,
-				140F582428525BC800CBDD27 /* ViewController.swift */,
-				140F582628525BC800CBDD27 /* Main.storyboard */,
 				140F582928525BCA00CBDD27 /* Assets.xcassets */,
-				140F582B28525BCA00CBDD27 /* LaunchScreen.storyboard */,
 				140F582E28525BCA00CBDD27 /* Info.plist */,
 			);
 			path = "LexoneSwiftLesson05-MVС";
+			sourceTree = "<group>";
+		};
+		140F583428525C2A00CBDD27 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				140F582428525BC800CBDD27 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		140F583528525C3500CBDD27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				140F583728525C4C00CBDD27 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		140F583628525C4200CBDD27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				140F583A2852634D00CBDD27 /* Helpers */,
+				140F583828525CA500CBDD27 /* Crypto.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		140F583728525C4C00CBDD27 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				140F582628525BC800CBDD27 /* Main.storyboard */,
+				140F582B28525BCA00CBDD27 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		140F583A2852634D00CBDD27 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				140F583B2852635D00CBDD27 /* RandomCounts.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +184,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				140F583928525CA500CBDD27 /* Crypto.swift in Sources */,
+				140F583C2852635D00CBDD27 /* RandomCounts.swift in Sources */,
 				140F582528525BC800CBDD27 /* ViewController.swift in Sources */,
 				140F582128525BC800CBDD27 /* AppDelegate.swift in Sources */,
 				140F582328525BC800CBDD27 /* SceneDelegate.swift in Sources */,
