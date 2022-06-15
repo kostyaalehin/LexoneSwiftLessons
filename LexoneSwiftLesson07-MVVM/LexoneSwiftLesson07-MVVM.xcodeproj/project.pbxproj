@@ -13,6 +13,9 @@
 		14AFD8DC28590E9500BB8397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AFD8DA28590E9500BB8397 /* Main.storyboard */; };
 		14AFD8DE28590E9900BB8397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14AFD8DD28590E9900BB8397 /* Assets.xcassets */; };
 		14AFD8E128590E9900BB8397 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AFD8DF28590E9900BB8397 /* LaunchScreen.storyboard */; };
+		14AFD8ED285910A300BB8397 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFD8EC285910A300BB8397 /* User.swift */; };
+		14AFD8EF2859116600BB8397 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFD8EE2859116600BB8397 /* ViewModel.swift */; };
+		14AFD8F2285911EA00BB8397 /* Dinamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFD8F1285911EA00BB8397 /* Dinamic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		14AFD8DD28590E9900BB8397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14AFD8E028590E9900BB8397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14AFD8E228590E9900BB8397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14AFD8EC285910A300BB8397 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		14AFD8EE2859116600BB8397 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		14AFD8F1285911EA00BB8397 /* Dinamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dinamic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		14AFD8D328590E9500BB8397 /* LexoneSwiftLesson07-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				14AFD8EA2859103F00BB8397 /* ViewModels */,
+				14AFD8E92859103800BB8397 /* Views */,
+				14AFD8E82859102900BB8397 /* Models */,
 				14AFD8D428590E9500BB8397 /* AppDelegate.swift */,
 				14AFD8D628590E9500BB8397 /* SceneDelegate.swift */,
-				14AFD8D828590E9500BB8397 /* ViewController.swift */,
-				14AFD8DA28590E9500BB8397 /* Main.storyboard */,
 				14AFD8DD28590E9900BB8397 /* Assets.xcassets */,
-				14AFD8DF28590E9900BB8397 /* LaunchScreen.storyboard */,
 				14AFD8E228590E9900BB8397 /* Info.plist */,
 			);
 			path = "LexoneSwiftLesson07-MVVM";
+			sourceTree = "<group>";
+		};
+		14AFD8E82859102900BB8397 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				14AFD8EC285910A300BB8397 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		14AFD8E92859103800BB8397 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				14AFD8D828590E9500BB8397 /* ViewController.swift */,
+				14AFD8EB2859105E00BB8397 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		14AFD8EA2859103F00BB8397 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				14AFD8F0285911CD00BB8397 /* Bindings */,
+				14AFD8EE2859116600BB8397 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		14AFD8EB2859105E00BB8397 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				14AFD8DA28590E9500BB8397 /* Main.storyboard */,
+				14AFD8DF28590E9900BB8397 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		14AFD8F0285911CD00BB8397 /* Bindings */ = {
+			isa = PBXGroup;
+			children = (
+				14AFD8F1285911EA00BB8397 /* Dinamic.swift */,
+			);
+			path = Bindings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14AFD8EF2859116600BB8397 /* ViewModel.swift in Sources */,
+				14AFD8ED285910A300BB8397 /* User.swift in Sources */,
 				14AFD8D928590E9500BB8397 /* ViewController.swift in Sources */,
 				14AFD8D528590E9500BB8397 /* AppDelegate.swift in Sources */,
 				14AFD8D728590E9500BB8397 /* SceneDelegate.swift in Sources */,
+				14AFD8F2285911EA00BB8397 /* Dinamic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,9 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var viewModel = ViewModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        bindViewModel()
+
+    }
+
+    func bindViewModel() {
+        viewModel.statusText.bin({ (statusText) in
+            DispatchQueue.main.async {
+                self.label.text = statusText
+            }
+        })
     }
 
 
