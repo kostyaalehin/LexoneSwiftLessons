@@ -9,12 +9,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var loginField: UITextField!
+    @IBOutlet weak var passField: UITextField!
+    @IBAction func loginButton(_ sender: Any) {
+        viewModel.userButtonPressed(login: (loginField.text ?? ""), password: (passField.text ?? ""))
+    }
+    @IBOutlet weak var label: UILabel!
+
+    func initialState() {
+        label.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+    }
+
     var viewModel = ViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         bindViewModel()
-
+        initialState()
     }
 
     func bindViewModel() {
@@ -23,6 +34,7 @@ class ViewController: UIViewController {
                 self.label.text = statusText
             }
         })
+        viewModel
     }
 
 
