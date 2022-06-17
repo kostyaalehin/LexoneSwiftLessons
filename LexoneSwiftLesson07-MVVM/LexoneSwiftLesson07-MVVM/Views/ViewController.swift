@@ -34,9 +34,11 @@ class ViewController: UIViewController {
                 self.label.text = statusText
             }
         })
-        viewModel
+        viewModel.statusColor.bin({ (statusColor) in
+            DispatchQueue.main.async {
+                self.label.textColor = statusColor
+            }
+        })
     }
-
-
 }
 
