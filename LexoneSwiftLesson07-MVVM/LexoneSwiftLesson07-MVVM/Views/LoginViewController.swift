@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     @IBOutlet weak var loginField: UITextField!
     @IBOutlet weak var passField: UITextField!
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         label.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     }
 
-    var viewModel = ViewModel()
+    var viewModel = LoginViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
