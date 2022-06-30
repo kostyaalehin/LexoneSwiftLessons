@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LexoneSwiftLesson07_MVVM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="LexoneSwiftLesson07_MVVM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,10 +100,10 @@
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="78.348214285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="hVx-2C-585">
             <objects>
-                <viewController id="fAc-1M-vcl" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="fAc-1M-vcl" customClass="MainViewController" customModule="LexoneSwiftLesson07_MVVM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zSe-IT-Rlr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,6 +128,9 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="aboutButtonPressed:" destination="fAc-1M-vcl" eventType="touchUpInside" id="K8m-zO-T9h"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSo-lI-0Fj">
                                 <rect key="frame" x="20" y="134" width="374" height="30"/>
@@ -151,15 +154,18 @@
                             <constraint firstItem="bSo-lI-0Fj" firstAttribute="leading" secondItem="867-Kf-WpX" secondAttribute="leading" constant="20" id="xtH-hL-EZZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainLabel" destination="bSo-lI-0Fj" id="YLH-Yj-sP7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SMX-df-wTJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="832" y="78"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="RuU-sP-sdA">
             <objects>
-                <viewController id="xV0-PZ-w5Z" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="xV0-PZ-w5Z" customClass="DetailViewController" customModule="LexoneSwiftLesson07_MVVM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EHs-ie-KZN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -245,6 +251,12 @@
                             <constraint firstItem="wLU-9P-pRI" firstAttribute="leading" secondItem="HSc-I7-Jki" secondAttribute="leading" constant="20" id="zhF-QU-syD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="Sia-Xc-OtT" id="xfT-Mb-gEp"/>
+                        <outlet property="emailLabel" destination="SYU-kQ-jeQ" id="1A6-bl-1V9"/>
+                        <outlet property="nameLabel" destination="UtM-dv-ZSe" id="QkA-dh-5Wm"/>
+                        <outlet property="phoneLabel" destination="UCy-LL-0C9" id="5de-Pb-f77"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y7K-Jv-JGk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
